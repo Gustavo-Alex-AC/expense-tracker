@@ -1,13 +1,144 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  /* 10 / 16 */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e9ecef;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.expense-tracker {
+  margin: 0 auto;
+  max-width: 60rem;
+  /* max-width: 40rem; */
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4rem;
+
+  padding: 20px;
+}
+
+.balance-income-expense {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.balance h3 {
+  font-weight: bold;
+}
+.balance h2 {
+  font-size: 2.2rem;
+}
+
+.income-expense {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: px; */
+
+  background-color: #fff;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.075);
+  padding: 15px 10px;
+}
+
+.line {
+  border-right: 1px solid #ced4da; /* Adjust the width and color as needed */
+  height: 30px; /* Adjust the height as needed */
+}
+
+.income,
+.expense,
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.income p {
+  color: #69db7c;
+}
+
+.expense p {
+  color: #d9480f;
+}
+
+.item-history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #fff;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.075);
+  padding: 10px;
+  margin-top: 10px;
+  border-right: 4px solid #69db7c;
+}
+
+.new-transaction {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.new-transaction label {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+.new-transaction input {
+  padding: 5px;
+}
+
+.text-valor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 40px;
+}
+
+.text,
+.valor {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 10px;
+}
+
+.button {
+  margin-top: 10px;
+  border: none;
+  color: #fff;
+  background-color: #9775fa;
+  font-size: 1.5rem;
+
+  padding: 8px;
+  cursor: pointer;
 }

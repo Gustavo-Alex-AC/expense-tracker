@@ -1,3 +1,9 @@
+import Main from "./Main";
+
 export default function App() {
-  return <div>Hello Again</div>;
+  return (
+    <div>
+      <Main />
+    </div>
+  );
 }
