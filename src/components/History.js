@@ -1,23 +1,14 @@
-export default function History() {
+import Item from "./Item";
+
+export default function History({ items, onDelete }) {
   return (
     <div className="history">
       <h3>Histórico</h3>
       <hr />
       <div className="item-history">
-        <div className="item">
-          <p>Salário</p>
-          <p>Kz 120000,00</p>
-        </div>
-
-        <div className="item">
-          <p>Gym</p>
-          <p>Kz 1200,00</p>
-        </div>
-
-        <div className="item">
-          <p>Gym</p>
-          <p>Kz 1200,00</p>
-        </div>
+        {items.map((item) => (
+          <Item item={item} key={item.id} onDelete={onDelete} />
+        ))}
       </div>
     </div>
   );
