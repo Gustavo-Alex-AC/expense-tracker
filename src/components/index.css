@@ -87,8 +87,20 @@ h3 {
 .scroll-container-history {
   max-height: 200px;
   overflow-y: auto;
-  border: 1.5px solid #fff;
-  padding: 20px;
+  /* border: 1.5px solid #fff; */
+  /* padding: 20px; */
+}
+
+.history-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.history-clear {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .item-history {

@@ -41,7 +41,7 @@ export default function Balances({ items }) {
         <div className="line"></div>
 
         <div className="expense">
-          <h3>DESPESAS</h3>
+          <h3>DESPESA</h3>
           <p>Kz {Number(despesa).toFixed(2)}</p>
         </div>
       </div>
