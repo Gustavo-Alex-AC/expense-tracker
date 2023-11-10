@@ -37,7 +37,7 @@ p {
   grid-template-columns: 1fr;
   row-gap: 4rem;
 
-  padding: 50px 20px 20px 20px;
+  padding: 30px 20px 20px 20px;
 }
 
 .balance-income-expense {
@@ -82,6 +82,13 @@ h3 {
 
 .expense p {
   color: #d9480f;
+}
+
+.scroll-container-history {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1.5px solid #fff;
+  padding: 20px;
 }
 
 .item-history {
@@ -148,4 +155,12 @@ h3 {
 
   padding: 8px;
   cursor: pointer;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright p {
+  font-size: 1.4rem;
 }

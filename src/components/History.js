@@ -2,7 +2,7 @@ import Item from "./Item";
 
 export default function History({ items, onDelete }) {
   return (
-    <div className="history">
+    <div className="history scroll-container-history">
       <h3>Histórico</h3>
       <hr />
       <div className="item-history">
