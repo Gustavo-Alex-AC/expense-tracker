@@ -19,29 +19,25 @@ const RedirectToChrome = () => {
       );
     };
 
-    // Display a message for non-Chrome users
-    const showNonChromeMessage = () => {
-      const messageDiv = document.getElementById(
-        "Por favor use o Google Chrome para melhor experiência || Please use Google Chrome for a best experience."
-      );
-      if (messageDiv) {
-        messageDiv.style.display = "block";
-      }
+    // Redirect to the Chrome store if the browser is not Chrome
+    const redirectToChromeStore = () => {
+      window.location.href =
+        "https://www.google.com/chrome/?brand=JJTC&gclid=CjwKCAiA6byqBhAWEiwAnGCA4N-Y_Z2tlDd910Ulj9lxRIOwAvEWB_6veE52p0-H00ZtzAhmy1NHaxoCLcUQAvD_BwE&gclsrc=aw.ds";
     };
 
     // Check the browser on component mount
     if (!isChrome()) {
-      showNonChromeMessage();
+      redirectToChromeStore();
     }
   }, []); // The empty dependency array ensures that this effect runs only once on component mount
 
   // Optional: Display a message for non-Chrome users
   return (
     <div>
-      <p id="non-chrome-message" style={{ display: "none" }}>
+      <p>
         This app is optimized for Google Chrome. Please use Chrome for the best
         experience || Este aplicativo é otimizado para Google Chrome. Use o
-        Chrome para obter a melhor experiência.
+        Chrome para obter o melhor experiência.
       </p>
     </div>
   );
