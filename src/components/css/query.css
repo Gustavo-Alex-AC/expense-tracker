@@ -1,0 +1,28 @@
+/*************************/
+/* below 1050px (Tablets) */
+/*************************/
+@media (max-width: 66em) {
+  html {
+    /* 8 / 16 = 0.5 = 50%*/
+    font-size: 50%;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .balance-income-expense {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .item-history {
+    grid-template-columns: 1fr;
+  }
+
+  .text-valor {
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,6 +3,7 @@ import Balances from "./Balances";
 import History from "./History";
 import Transaction from "./Transaction";
 import useLocalStorageState from "./useLocalStorageState";
+import QuoteDisplay from "./Quotes";
 
 export default function Main() {
   //   const [items, setItems] = useState([]);
@@ -31,7 +32,7 @@ export default function Main() {
   return (
     <div className="expense-tracker">
       <div className="main-container">
-        <h1>Controlador de Finanças</h1>
+        <h1>Rastreador De Despesas</h1>
         <Balances items={items} />
         <History
           items={items}
@@ -41,8 +42,9 @@ export default function Main() {
         />
         <Transaction addItem={handleSubmit} />
         <div className="footer-copyright">
-          <p>Desenvolvido para a minha melhor companinha dos Cimenas😅</p>
-          <p>Design and Coded by Gustavo Alex 👨🏽‍💻</p>
+          {/* <p>Desenvolvido para a minha melhor companinha dos Cimenas😅</p> */}
+          <QuoteDisplay />
+          <p className="copyright">Design and Coded by Gustavo Alex 👨🏽‍💻</p>
         </div>
       </div>
     </div>

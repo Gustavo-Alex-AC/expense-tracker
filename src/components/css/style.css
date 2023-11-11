@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background-color: #e9ecef;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -35,7 +36,7 @@ p {
 .main-container {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 4rem;
+  row-gap: 3rem;
 
   padding: 30px 20px 20px 20px;
 }
@@ -88,7 +89,7 @@ h3 {
   max-height: 200px;
   overflow-y: auto;
   /* border: 1.5px solid #fff; */
-  /* padding: 20px; */
+  padding: 20px;
 }
 
 .history-title {
@@ -173,6 +174,13 @@ h3 {
   text-align: center;
 }
 
-.footer-copyright p {
-  font-size: 1.4rem;
+.frase {
+  font-size: 1.5rem;
+  color: #d9480f;
+}
+
+.copyright {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #69db7c;
 }
