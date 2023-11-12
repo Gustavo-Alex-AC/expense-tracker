@@ -34,11 +34,11 @@ const RedirectToChrome = () => {
   // Optional: Display a message for non-Chrome users
   return (
     <div>
-      <p>
+      {/* <p>
         This app is optimized for Google Chrome. Please use Chrome for the best
         experience || Este aplicativo é otimizado para Google Chrome. Use o
         Chrome para obter o melhor experiência.
-      </p>
+      </p> */}
     </div>
   );
 };
