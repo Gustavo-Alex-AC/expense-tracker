@@ -184,3 +184,9 @@ h3 {
   font-size: 1.2rem;
   color: #69db7c;
 }
+
+.developer:link,
+.developer:visited {
+  text-decoration: none;
+  color: #555;
+}
