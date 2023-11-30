@@ -43,10 +43,12 @@ export default function Main() {
         <Transaction addItem={handleSubmit} />
         <div className="footer-copyright">
           <QuoteDisplay />
-          <a class="copyright developer" href="mailto:gchitangua@gmail.com">
-            Copyright &copy; {new Date().getFullYear()} by Gustavo Alex Adolfo
-            Chitangua 👨🏽‍💻.
-          </a>
+          <p className="copyright">
+            <a className="developer" href="mailto:gchitangua@gmail.com">
+              Copyright &copy; {new Date().getFullYear()} by Gustavo Alex Adolfo
+              Chitangua 👨🏽‍💻.
+            </a>
+          </p>
         </div>
       </div>
     </div>
