@@ -44,8 +44,12 @@ export default function Main() {
         <div className="footer-copyright">
           {/* <p>Desenvolvido para a minha melhor companinha dos Cimenas😅</p> */}
           <QuoteDisplay />
-          <p className="copyright" href="emailto:gchitangua@gmail.com">
+          {/* <p className="copyright" href="emailto:gchitangua@gmail.com">
             Design and Coded by Gustavo Alex Adolfo Chitangua 👨🏽‍💻
+          </p> */}
+          <p class="copyright" href="mailto:gchitangua@gmail.com">
+            Copyright &copy; {new Date().getFullYear()} by Gustavo Alex Adolfo
+            Chitangua 👨🏽‍💻.
           </p>
         </div>
       </div>
