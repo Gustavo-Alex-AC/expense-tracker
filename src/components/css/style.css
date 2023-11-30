@@ -180,7 +180,7 @@ h3 {
 }
 
 .copyright {
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 1.2rem;
   color: #69db7c;
 }
@@ -188,5 +188,4 @@ h3 {
 .developer:link,
 .developer:visited {
   text-decoration: none;
-  color: #555;
 }
